@@ -1,5 +1,5 @@
 body{
-    background-color: #aee2ff;
+    background-color: #cde2ec;
 }
 
 nav{
@@ -28,7 +28,7 @@ nav h1 {
     font-size: 3.5em;
     margin: 0;
     padding: -10px;
-    color: #4a91e2;
+    color: #000;
     font-family: "Knewave", system-ui;
     text-decoration: none;
     text-align: center;
@@ -146,7 +146,7 @@ header img{
     text-transform: unset;
     padding: 10px;
     margin: 10px 0;
-    color: #000000a9;
+    color: #000;
 }
 
 .servicos-grid {
@@ -164,7 +164,7 @@ header img{
 .servicos-grid p{
     text-align: center;
     font-weight: bold;
-    color: #000000a9;
+    color: #000;
     font-size: 1em;
     line-height: 1.3;
 }
@@ -180,7 +180,6 @@ header img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 50px;
 }
 
 .animais-grid {
@@ -205,7 +204,7 @@ header img{
     margin-bottom: 0;
     text-align: center;
     font-weight: bold;
-    color: #000000a9;
+    color: #000;
     font-size: 1em;
     line-height: 1.3;
 }
@@ -274,15 +273,16 @@ header img{
 
 .btn{
     display: inline-block;
-    background-color: #4a91e2;
+    background-color: #8eb7e2d3;
     color: white;
     font-weight: bold;
     padding: 10px 20px;
     text-decoration: none;
     text-align: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 20px;
     border-radius: 8px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.342);
 }
 
 .btn-container{
@@ -354,3 +354,116 @@ blockquote{
 
 } 
 
+
+@media (max-width: 768px) {
+    body{
+        width: 140vw;
+        height: 100vh;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    nav h1 {
+        font-size: 3.em;
+        margin-bottom: 10px;
+    }
+    .menu-list li {
+        font-size: 3.3em;
+        padding: 10px;
+    }
+    .menu-list li a {
+        padding: 10px;
+    }
+    .menu-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+         width: 100%;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header img {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
+    .header-conten{
+        text-align: center;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .servicos{
+        text-align: center;
+        height: auto;
+        width: 140vw;
+    }
+
+    .servicos-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .espaco-itens {
+        flex-direction: column;
+        align-items: center;
+    }
+    .animais{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .animais-grid {
+        grid-template-columns: 1fr;
+    }
+    .header-content {
+        text-align: center;
+        right: 0;
+        left: 0;
+        transform: none;
+    }
+    .banhos{
+        background-color: #4a91e2;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 8px;
+    }
+    .btn-container{
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 25px;
+        padding: 15px;
+    }
+    .btn{
+        text-align: center;
+    }
+    .informacao-final{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    }
+
+}
